@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <h1>Formation Javascript</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam nostrum pariatur sed tempore sit laborum reiciendis excepturi, similique culpa labore quaerat aliquid numquam nulla ad libero, nesciunt, facere tempora aperiam.</p>
+
+    <script>
+        /*let pays =  ['RDC', 'France', 'USA', 'Gabon']
+        let nombre = [4,8,12,9]
+        let somme = 0
+
+        pays[1] = 'Italie'
+        let dernier = pays.pop()
+        let premier = pays.shift()
+        pays.push('Soudan')
+        pays.unshift('Belgique')
+        console.log(pays)
+        for(let i of nombre){
+            somme += i
+
+            console.log(somme)
+        } */
+       /* function hello (nom) {
+            console.log('Hello world' + ' ' + nom)
+        }
+        hello('Jordane')*/
+        //const hello = (nom, message) => message + " " + nom
+        const somme = (a,b) => console.log(+a + +b)
+        const multiplication = (a,b) => console.log(a*b)
+
+        function operation(callback) {
+            const val1 = prompt("Première valeur")
+            const val2 = prompt("Deuxième valeur")
+            callback(val1, val2)
+        }
+
+        operation((a, b) => {
+            console.log(a - b)
+        })
+    </script>
+</body>
+</html>
