@@ -64,6 +64,13 @@
         object.assign(user2, user1, user3) // suite de l'exercice 
         //  Pour supprimer une propriété
         delete user.profession  
+        // Vérification de l'existence d'une propriété
+        if ("age" in user) {
+            console.log('OK')
+        }
+        else {
+            console.log('KO')
+        }
     </script>
 </body>
 </html>
